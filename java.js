@@ -1,6 +1,5 @@
 console.log("Hello World!");
 
-<<<<<<< HEAD
 
 //DOM 
 const container = document.querySelector('.container').style;
@@ -66,8 +65,6 @@ scoreboard.style.maxWidth = '350px';
 
 
 
-=======
->>>>>>> 6a0b88c591a2a456e13399b909b7cf4848c46217
 //Objective: Create a Rock Paper Scissors game.
 //Rock Paper Scissors is a game of 2 players, in this case a 
 //user input player against a computer. The players must choose 
@@ -78,16 +75,11 @@ scoreboard.style.maxWidth = '350px';
 //Algorithm
 //display a message, prompting a user to input rock, paper, or scissors
 //store the user's input in a variable
-<<<<<<< HEAD
 let userInput = '';
 let round = 5;
 let playerScore = 0;
 let computerScore = 0;
 let roundwinner;
-=======
-let userInput;
- 
->>>>>>> 6a0b88c591a2a456e13399b909b7cf4848c46217
 
 
 //create a variable for the computer's input (random input)
@@ -114,7 +106,6 @@ function getComputerChoice() {
 //compare the variables with each scenario to see who wins
 function playRound(userInput, computerInput){
     let winner;
-<<<<<<< HEAD
     //userInput = prompt('Rock Paper Scissors!\nChoose one: ');
     computerInput = getComputerChoice();
     if (userInput.toLowerCase() == 'rock' && computerInput == 'Rock'){
@@ -122,87 +113,47 @@ function playRound(userInput, computerInput){
     }
     else if (userInput.toLowerCase() == 'rock' && computerInput == 'Paper'){
         scoreText.textContent = "Computer Wins!";
-=======
-    userInput = prompt('Rock Paper Scissors!\nChoose one: ');
-    computerInput = getComputerChoice();
-    if (userInput.toLowerCase() == 'rock' && computerInput == 'Rock'){
-        alert('Game is tied.');
-    }
-    else if (userInput.toLowerCase() == 'rock' && computerInput == 'Paper'){
-        alert('Computer Wins.');
->>>>>>> 6a0b88c591a2a456e13399b909b7cf4848c46217
         winner = 'computer';
         return winner;
     }
     else if (userInput.toLowerCase() == 'rock' && computerInput == 'Scissors'){
-<<<<<<< HEAD
         scoreText.textContent = "You Win!";
-=======
-        alert('Congrats. You Won!');
->>>>>>> 6a0b88c591a2a456e13399b909b7cf4848c46217
         winner = 'player';
         return winner;
     }
     else if (userInput.toLowerCase() == 'paper' && computerInput == 'Paper'){
-<<<<<<< HEAD
         scoreText.textContent = "Tie!";
     }
     else if (userInput.toLowerCase() == 'paper' && computerInput == 'Rock'){
         scoreText.textContent = "You Win!";
-=======
-        alert('Game is tied.');
-    }
-    else if (userInput.toLowerCase() == 'paper' && computerInput == 'Rock'){
-        alert('Congrats. You Won!');
->>>>>>> 6a0b88c591a2a456e13399b909b7cf4848c46217
         winner = 'player';
         return winner;
     }
     else if (userInput.toLowerCase() == 'paper' && computerInput == 'Scissors'){
-<<<<<<< HEAD
         scoreText.textContent = "Computer Wins!";
-=======
-        alert('L. The Computer Won.');
->>>>>>> 6a0b88c591a2a456e13399b909b7cf4848c46217
         winner = 'computer';
         return winner;
     }
     else if (userInput.toLowerCase() == 'scissors' && computerInput == 'Scissors'){
-<<<<<<< HEAD
         scoreText.textContent = "Tie!";
     }
     else if (userInput.toLowerCase() == 'scissors' && computerInput == 'Paper'){
         scoreText.textContent = "You Win!";
-=======
-        alert('Game is tied.');
-    }
-    else if (userInput.toLowerCase() == 'scissors' && computerInput == 'Paper'){
-        alert('Congrats. You Won!');
->>>>>>> 6a0b88c591a2a456e13399b909b7cf4848c46217
         winner = 'player';
         return winner;
     }
     else if (userInput.toLowerCase() == 'scissors' && computerInput == 'Rock'){
-<<<<<<< HEAD
         scoreText.textContent = "Computer Wins!";
-=======
-        alert('You lost.');
->>>>>>> 6a0b88c591a2a456e13399b909b7cf4848c46217
         winner = 'computer';
         return winner;
     }
     else {
-<<<<<<< HEAD
         console.log('not a selection.')
-=======
-        alert('not a selection.')
->>>>>>> 6a0b88c591a2a456e13399b909b7cf4848c46217
     }
 
     
 }
 
-<<<<<<< HEAD
 
 
 
@@ -262,25 +213,3 @@ function game() {
     }
     else scoreText.textContent = "Game Over! The Game is TIED!";
  }
-=======
-//create a function that keeps a 5 round game. 
-function game(){
-    let round = 5;
-    let score = 0;
-    let roundwinner;
-    console.log('test');
-    for (round; round > 0; round--){
-        roundwinner = playRound(userInput, computerInput);
-        if (roundwinner == 'player'){
-            score += 1;
-        }
-        else if (roundwinner == 'computer'){
-            score -= 1;
-        }
-        console.log(roundwinner);
-        console.log(score);
-        console.log(round);
-    }
-}
-game();
->>>>>>> 6a0b88c591a2a456e13399b909b7cf4848c46217
