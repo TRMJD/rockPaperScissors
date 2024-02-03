@@ -9,9 +9,9 @@ const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissors = document.querySelector('#scissors');
 
-rock.textContent = "ROCK";
-paper.textContent = "PAPER";
-scissors.textContent = "SCISSORS";
+rock.textContent = "👊";
+paper.textContent = "📃";
+scissors.textContent = "✂️";
 
 
 
@@ -198,6 +198,7 @@ function game() {
 
     //display the results
     scoreCount.textContent = "Your Score: " + playerScore;
+    scoreCount.style.color = "lightGreen";
     instructions.textContent = "Round: " + round;
     playerSelection.textContent = "You Chose: " + userInput.toUpperCase();
     computerSelection.textContent = "Computer Chose: " + computerInput.toUpperCase();
@@ -207,9 +208,11 @@ function game() {
  function checkWinner() {
     if (playerScore > computerScore) {
         scoreText.textContent = "Game Over! The winner is YOU with the score of: " + playerScore + " out of 5 rounds.";
+        scoreText.style.color = "green";
     }
     else if (playerScore < computerScore) {
         scoreText.textContent = "Game Over! The winner is COMPUTER with the score of: " + computerScore + " out of 5 rounds.";
+        scoreText.style.color = "red";
     }
     else scoreText.textContent = "Game Over! The Game is TIED!";
  }
