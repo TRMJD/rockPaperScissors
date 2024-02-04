@@ -198,7 +198,7 @@ function game() {
 
     //display the results
     scoreCount.textContent = "Your Score: " + playerScore;
-    scoreCount.style.color = "lightGreen";
+    scoreCount.style.color = "green";
     instructions.textContent = "Round: " + round;
     playerSelection.textContent = "You Chose: " + userInput.toUpperCase();
     computerSelection.textContent = "Computer Chose: " + computerInput.toUpperCase();

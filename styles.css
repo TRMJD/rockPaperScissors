@@ -1,6 +1,7 @@
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: beige;
+    margin: 0 0;
 }
 
 #buttons button {
@@ -11,6 +12,20 @@ body {
     border-radius: 250px;
     cursor: pointer;
     transition: background-color 0.5s ease;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    margin: 0 0;
+    height: 70px;
+   
+}
+
+.container {
+    border-style: solid;
 }
 
 #buttons button:hover {
